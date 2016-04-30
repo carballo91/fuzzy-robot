@@ -1,0 +1,155 @@
+/*walk away by munsteri */
+body {
+  background-color:#E8E8E8;
+  color:#E8E8E8;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+a {
+  color:#990100;
+  font-size:1.2em;
+  margin: 0 1em 1em 1em;  
+}
+p{
+  color:#333333;
+  font-size:1.2em;
+  margin: 0 1em 1em 1em;
+}
+li{
+  color:#333333;
+  font-size:1.2em;
+  margin: 0 1em 1em 1em;
+}
+span {
+  color:#990100;
+}
+#main {
+  background-color: #E8E8E8;
+  box-shadow:15px 15px 40px #333333;
+  border:4px solid #333333;
+  height:auto;
+  margin: 2em auto;
+  width:80%;
+}
+h1 {
+  color:#990100;
+  height:2m;
+  font-size:3em;
+  margin:1em 0;
+  text-align:center;
+}
+.ribbon {
+    position: relative;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.ribbon i:after,
+.ribbon u:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    bottom: -16px;
+    z-index: 0;
+}
+.ribbon i:after {
+    right: -16px;
+    border-color: transparent transparent transparent #333333;
+    border-width: 0 0 16px 16px;
+}
+.ribbon u:after {
+    left: 0;
+    border-color: transparent #333333 transparent transparent;
+    border-width: 0 16px 16px 0;
+}
+.ribbon u {
+    display: block;
+    position: relative;
+    width: 100%;
+    left: -16px;
+    padding: 0 16px 16px;
+    background: #333333;
+    -webkit-border-top-left-radius: 50% 16px;
+            border-top-left-radius: 50% 16px;
+    -webkit-border-top-right-radius: 50% 16px;
+            border-top-right-radius: 50% 16px;
+    text-align: center;
+    font: 28px/48px Museo, cursive;
+    font-weight: 700;
+    text-decoration: none;
+    color: #990100;
+    text-shadow: 0 1px 1px rgba(163, 61, 51, .8), 0 2px 1px #333333;
+}
+.ribbon u:before,
+.ribbon:after {
+    content: '';
+    position: absolute;
+    height: 16px;
+    left: 0;
+    bottom: 0;
+    -webkit-border-top-left-radius: 50% 16px;
+            border-top-left-radius: 50% 16px;
+    -webkit-border-top-right-radius: 50% 16px;
+            border-top-right-radius: 50% 16px;
+    box-shadow: inset 0 2px 3px #333333;
+}
+.oldie .ribbon u:before,
+.oldie .ribbon:after {
+    content: none;
+}
+.ribbon u:before {
+    width: 100%;
+    background: #333333;
+}
+.ribbon:after {
+    width: 100%;
+    background: #E8E8E8;
+    z-index: 1;
+}
+.image {
+  height:400px;
+  margin:0 auto;
+  float:right;
+  width:50%;
+}
+.image > img {
+  /*border: 2px solid;
+  border-color:red;
+  box-shadow: 0px 10px 10px red;*/
+  display:block;
+  height: 400px;
+  float:right;
+  width:80%;
+  margin: 0 2em;
+}
+#info {
+  text-decoration:underline;
+}
+@media (min-width:760px) and (max-width:1024px) {
+  h1 {
+    font-size:1.6em;
+  }
+   li {
+    font-size:1em;
+  }  
+  .image {
+    height:300px;
+  }
+  .image > img {
+  height: 300px;
+  }  
+}
+@media (min-width:320px) and (max-width: 759px) {
+  h1 {
+    color: white;
+    font-size:1.2em;
+  }
+  li {
+    font-size:0.9em;
+  }
+  .image {
+  height:200px;
+}
+  .image > img {
+  height: 200px;
+  margin: 0 1em;
+}
